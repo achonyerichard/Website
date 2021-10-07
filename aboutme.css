@@ -1,0 +1,42 @@
+body,html{
+    height: 100%;
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.8em;
+    color:whitesmoke;
+    background-color:#131114;
+    min-height: 100%;
+}
+container{
+    display: flex;
+}
+
+.left{
+    margin-left: 40px;
+    margin-top: 100px;
+    margin-left: 200px;
+    font-size: 20px;
+    border: 8px ;
+    min-height: 100%;
+    width: 50%;
+    float: left;
+    padding: 20px;
+    background-color: #131114;
+
+}
+p{
+    font-weight: 50;
+}
+.img {
+   align-content: right;
+   margin-right: 300px;
+   float: right;
+   height: 200px;
+   margin-top: 150px;
+   object-fit: contain;
+}
+  
+
+
+
