@@ -1,0 +1,241 @@
+body{
+    font-size: 16px;
+}
+.navbar{
+    background-color: black !important;
+}
+.peace-icon{
+    color: rgb(206, 206, 70);
+}
+
+.img4{
+    background-image:url(Richard1.Jpg);
+    background-position: center;
+}
+.img5{
+    background-image: url(richard2.jpg);
+    background-position: center;
+}
+.img6{
+    background-image: url(Richard.jpg);
+    background-position: center;
+}
+.home .carousel-item{
+    min-height: 80vh;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.home .carousel-item::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+.home .carousel-item .datext{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.home .carousel-item h2{
+    font-style: 80px;
+    color: #ffffff;
+    margin: 0 0 10px;
+}
+
+.home .carousel-item p{
+    font-style: 30px;
+    color: #eeeeee;
+    margin: 0;
+}
+
+.home .carousel-item.active h2{
+    animation: fadeInLeft 0.5s ease forwards;
+}
+.home .carousel-item.active p{
+    animation: fadeInRight 0.5s ease forwards;
+}
+@keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.home .carousel-controls{
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    z-index: 10;
+    transform: translateX(-50%);
+}
+.home .carousel-indicators{
+    position: relative;
+    margin: 0;
+}
+.home .carousel-indicators button{
+    height: 70px;
+    width: 70px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid transparent;
+    transition: all 0.3s linear ease;
+}
+.home .carousel-indicators button.active{
+    border-color: #ffffff;
+    transform: scale(1.2);
+}
+
+.img4-round{
+    background-image: url(Richard1.Jpg);
+    background-position: center;
+}
+.img5-round{
+    background-image: url(richard2.jpg);
+    background-position: center;
+}
+.img6-round{
+    background-image: url(Richard.jpg);
+    background-position: center;
+    
+}
+#tabbed-content li{
+    display: inline-block;
+    padding: 10px 14px;
+    background: black;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    color: whitesmoke;
+}
+
+#tabbed-content li:hover{
+    background-color: bisque;
+    color: black;
+}
+
+#tabbed-content .panel{
+    display: none;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+#tabbed-content .panel.active{
+    display: block;
+}
+#tabbed-content p{
+    font-size: 3.2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.jumbotron{
+    /* width: 100% !important; */
+    /* padding-top: 2rem; */
+    height: fit-content;
+    background-image: url('https://images.pexels.com/photos/5598289/pexels-photo-5598289.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center;
+    -webkit-box-shadow: inset 10px 10px 234px 139px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 10px 10px 234px 139px rgba(0,0,0,0.75);
+    box-shadow: inset 10px 10px 234px 139px rgba(0,0,0,0.75);
+}
+.box {
+    width: 227px;
+    height: 227px;
+    background-color: #f6f6f6;
+  }  
+  .box a {
+    color:black;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 30% 30px 0 30px;
+    text-align: center;
+    transition: none;
+    line-height: 1;
+    font-family: 'Open Sans Condensed', Arial, Verdana, sans-serif;
+  }
+  .box:hover{
+    background-color:black;
+  }
+  .box:hover a{
+   color:#fff;
+   text-decoration:none;
+  }
+  
+  
+  .box a.more-links {
+    color: #fff;
+    padding: 70px 110px 0 20px;
+    background: #a89269 url(https://raw.githubusercontent.com/solodev/icon-box-slider/master/rightarrow.png) no-repeat 155px 170px;
+  }
+footer{
+    height: auto;
+    background-color: black;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color: white;
+}
+footer p{
+    font-weight: 700;
+}
+footer a{
+    color: inherit;
+}
+footer a:hover{
+    color: lightcyan;
+    font-weight: 100;
+    text-decoration: none;
+}
+footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+footer li:not(:last-child){
+    margin-bottom: 0.5rem;
+}
+
+  @media screen and (max-width:425px) {
+    #tabbed-content p{
+        font-size: 2rem;
+    }
+    #tabbed-content{
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        margin: 1rem;
+    }
+    #aboutme{
+        margin: 0;
+        padding: 0;
+    }
+    #socials{
+        justify-content: center;
+    }
+    .jumbotron h3{
+        font-size: 1.5rem;
+    }
+  }
